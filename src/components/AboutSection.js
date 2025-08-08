@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function AboutSection() {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -64,7 +65,13 @@ export default function AboutSection() {
               {technologies.map((tech, index) => (
                 <div key={index} className="tech-item">
                   <div className="tech-icon">
-                    <img src={tech.icon} alt={tech.name} className="tech-icon-img" />
+                    <Image 
+                      src={tech.icon} 
+                      alt={tech.name} 
+                      width={40} 
+                      height={40} 
+                      className="tech-icon-img" 
+                    />
                   </div>
                   <span className="tech-name">{tech.name}</span>
                 </div>

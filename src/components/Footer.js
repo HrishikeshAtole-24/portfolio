@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="footer-logo">Hrishikesh</div>
             <div className="footer-tagline">
               Crafting digital experiences with passion and precision. 
-              Let's build something amazing together.
+              Let&apos;s build something amazing together.
             </div>
           </div>
           

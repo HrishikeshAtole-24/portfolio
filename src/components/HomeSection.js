@@ -49,7 +49,7 @@ export default function HomeSection() {
     timeout = setTimeout(typeWriter, isDeleting ? ERASING_SPEED : TYPING_SPEED);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, phraseIndex]);
+  }, [charIndex, isDeleting, phraseIndex, phrases]);
 
   return (
     <section id="home" className="section">
